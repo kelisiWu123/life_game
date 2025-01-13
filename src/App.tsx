@@ -1,8 +1,23 @@
-import { RouterProvider } from 'react-router-dom';
-import { router } from '@/routes';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Layout from './components/layout/Layout';
+import HomePage from './pages/HomePage';
+import CultivationPage from './pages/CultivationPage';
+import TasksPage from './pages/TasksPage';
+import DemonsPage from './pages/DemonsPage';
+import ProfilePage from './pages/ProfilePage';
 
-function App() {
-  return <RouterProvider router={router} />;
+export default function App() {
+  return (
+    <Router>
+      <Layout>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/cultivation" element={<CultivationPage />} />
+          <Route path="/tasks" element={<TasksPage />} />
+          <Route path="/demons" element={<DemonsPage />} />
+          <Route path="/profile" element={<ProfilePage />} />
+        </Routes>
+      </Layout>
+    </Router>
+  );
 }
-
-export default App;

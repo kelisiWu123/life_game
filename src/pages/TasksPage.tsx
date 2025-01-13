@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 
-export default function CultivationPage() {
+export default function TasksPage() {
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -9,18 +9,18 @@ export default function CultivationPage() {
       className="space-y-6 py-6"
     >
       <section className="rounded-lg bg-white p-6 shadow-sm">
-        <h2 className="mb-4 text-lg font-medium">修炼境界</h2>
-        {/* TODO: 添加境界信息 */}
+        <h2 className="mb-4 text-lg font-medium">日常任务</h2>
+        {/* TODO: 添加日常任务列表 */}
       </section>
 
       <section className="rounded-lg bg-white p-6 shadow-sm">
-        <h2 className="mb-4 text-lg font-medium">功法</h2>
-        {/* TODO: 添加功法列表 */}
+        <h2 className="mb-4 text-lg font-medium">突破任务</h2>
+        {/* TODO: 添加突破任务列表 */}
       </section>
 
       <section className="rounded-lg bg-white p-6 shadow-sm">
-        <h2 className="mb-4 text-lg font-medium">装备</h2>
-        {/* TODO: 添加装备列表 */}
+        <h2 className="mb-4 text-lg font-medium">成就任务</h2>
+        {/* TODO: 添加成就任务列表 */}
       </section>
     </motion.div>
   );
